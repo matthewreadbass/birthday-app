@@ -1,5 +1,5 @@
 <% if @birthday == @now %>
 <p> Happy Birthday <% @name %>! </p>
-<% # <% else %>       %>
-<% # <p> Your birthday will be in <%= ((@birthday - @now) / 86400).floor %> days, <%= @name %> </p>       %>
+<% else %>
+<p> Your birthday will be in <%= ((@birthday - @now) / 86400).floor %> days, <%= @name %> </p>
 <% end %>

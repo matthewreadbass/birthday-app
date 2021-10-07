@@ -2,24 +2,7 @@
 <form action="/birthday" method="post">
   <p>What's your name?</p>
     <input type="text" name="name">
-  <p>When's your birthday?</p>
-    <label for="day">day:</label>
-      <input type="number" min="1" max="31" name="day">
-    <label for="month">month:</label>
-      <select id="month" name="month">
-        <option>January</option>
-        <option>February</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>August</option>
-        <option>September</option>
-        <option>October</option>
-        <option>November</option>
-        <option>December</option>
-      </select>
-      <br>
+  <p>When's your next birthday?</p>
+    <input type="date" name="birthday">
     <input type="submit" value="Go!">
 </form>

@@ -6,8 +6,9 @@ get "/" do
 end
 
 post "/birthday" do
-  @name = params[:name]
-  @day = params[:day]
-  @month = params[:month]
+  "BIRTHDAY"
+  @name = params[:name].capitalize
+  @birthday = params[:birthday]
+  @now = Time.now.strftime("%Y-%m-%d")
   erb(:birthday)
 end
